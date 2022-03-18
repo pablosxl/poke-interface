@@ -6,9 +6,6 @@
         :items-per-page="$attrs['items-per-page'] || 10"
         loading-text="Carregando... Por favor aguarde"
         class="elevation-1">
-        <template v-slot:item.actions="{ item }">
-            <slot v-bind="item" />
-        </template>
         <template 
             v-for="(_, slot) of $scopedSlots"
             v-slot:[slot]="scope">
