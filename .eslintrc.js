@@ -5,6 +5,7 @@ module.exports = {
     },
     extends: ["plugin:vue/base", "plugin:vue/essential", "plugin:vue/strongly-recommended"],
     rules: {
+        "vue/multi-word-component-names" : 0,
         "vue/html-closing-bracket-newline": ["error", {
             "singleline": "never",
             "multiline": "never"
